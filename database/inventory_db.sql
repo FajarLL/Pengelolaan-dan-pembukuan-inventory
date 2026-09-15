@@ -33,7 +33,7 @@ CREATE TABLE `admin` (
   `nama` varchar(100) NOT NULL,
   `kontak` varchar(20) DEFAULT NULL,
   `email` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `admin`
@@ -58,7 +58,7 @@ CREATE TABLE `inventory` (
   `harga` decimal(12,2) DEFAULT '0.00',
   `id_gudang` int DEFAULT NULL,
   `id_vendor` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `inventory`
@@ -80,7 +80,7 @@ CREATE TABLE `storage_unit` (
   `id_gudang` int NOT NULL,
   `nama_gudang` varchar(100) NOT NULL,
   `lokasi` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `storage_unit`
@@ -101,7 +101,7 @@ CREATE TABLE `vendor` (
   `nama` varchar(100) NOT NULL,
   `kontak` varchar(20) DEFAULT NULL,
   `nama_barang` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `vendor`
